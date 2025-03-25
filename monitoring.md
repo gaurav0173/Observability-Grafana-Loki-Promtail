@@ -22,6 +22,10 @@ This guide assumes you have Docker and Docker Compose installed on your system. 
 4. Choose an appropriate size (e.g., **Standard_B1s** for testing).
 5. Configure **networking** to allow SSH (port 22) and other necessary ports.
 6. Click **Review + Create** and deploy the VM.
+7. Edit inbound rules in **Networking > Inbound port rules**:
+   - Allow **SSH (22)** from your IP.
+   - Allow **Grafana (3000)** and **Loki (3100)** from trusted sources.
+
 
 ### Connecting to the Instance
 Once the VM is running, connect via SSH:
