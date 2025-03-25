@@ -64,6 +64,24 @@ Inside the `monitoring` directory, create the following files:
 - `loki-config.yml`: Configuration file for Loki, including WAL, schema, and storage settings.
 - `promtail-config.yml`: Configuration file for Promtail, defining log scraping and Loki endpoint.
 
+
+### Create and edit the configuration files using nano:
+```bash
+nano docker-compose.yml
+```
+Copy and paste the appropriate `docker-compose.yml` content, then save and exit (Ctrl+X, Y, Enter).
+
+```bash
+nano loki-config.yml
+```
+Copy and paste the appropriate `loki-config.yml` content, then save and exit.
+
+```bash
+nano promtail-config.yml
+```
+Copy and paste the appropriate `promtail-config.yml` content, then save and exit.
+
+
 ## Configuring loki-config.yml
 Loki requires a configuration file to define its behavior. Here’s the configuration:
 
